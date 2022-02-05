@@ -89,14 +89,13 @@ header {
     margin:1rem auto 0 0;
     padding:1rem 4rem;
     border-radius: 3rem;
+    box-shadow: hsla(0, 0%, 0%, 40%) 3px 3px 1rem;
 }
 
 .board__article__button:hover {
     background-color: hsl(300, 69%, 71%);
 
     color:hsl(0, 0%, 100%);
-
-    box-shadow: hsla(0, 0%, 0%, 40%) 3px 3px 1rem;
 
     transition:0.3s ease;
     opacity: 1;
@@ -209,9 +208,6 @@ header {
 
 
 }
-
-
-
 
 
 
