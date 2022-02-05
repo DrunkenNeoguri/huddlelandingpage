@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+
+/** COMMON **/
+
+body {
+    background-image: url("images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size:16px;
+    color:hsl(0, 0%, 100%);
+
+}
+
+header {
+    display:grid;
+    justify-content:flex-start;
+    align-content:center;
+
+    text-align:left;
+
+    padding:3rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+
+/**mainboard**/
+
+.mainboard {
+    display:grid;
+    grid-template-rows: 1fr;
+
+    margin:auto 3rem;
+    margin-bottom: 4rem;
+}
+
+.mainboard .board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+
+    gap: 0 1rem;
+
+    margin:auto;
+}
+
+
+
+/** board__article **/
+
+.board__article {
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    margin-top:1rem;
+    margin-right: 8rem;
+    margin: 1rem 3rem 0 0;
+}
+
+.board__article__subject {
+    font-family:"Poppins", sans-serif;
+    font-weight: 600;
+    font-size:1.2rem;
+}
+
+.board__article__subject h1 {
+    margin-bottom:0;
+}
+
+.board__article__button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(257, 40%, 49%);
+
+    display:inline;
+
+    margin:1rem auto 0 0;
+    padding:1rem 4rem;
+    border-radius: 3rem;
+}
+
+.board__article__button:hover {
+    background-color: hsl(300, 69%, 71%);
+
+    color:hsl(0, 0%, 100%);
+
+    box-shadow: hsla(0, 0%, 0%, 40%) 3px 3px 1rem;
+
+    transition:0.3s ease;
+    opacity: 1;
+}
+
+
+
+/** icons **/
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-size: 2.3rem;
+
+    margin-top:1rem;
+    margin-right:2rem;
+}
+
+.icons ion-icon {
+    margin:0 0.5rem;
+}
+
+.icons ion-icon:hover {
+    transition:0.3s ease;
+    color: hsl(300, 69%, 71%);
+    opacity:1;
+}
+
+
+
+/** mobile size **/
+
+@media(max-width:1024px) {
+    body {
+        background-image: url("images/bg-mobile.svg");
+        background-size: contain;
+    }
+
+    header {
+        padding:2rem 1rem;
+        max-width: 10rem;
+    }
+
+    header img {
+        max-width: 9rem;
+    }
+
+    .mainboard {
+        margin:auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mainboard .board {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+
+        text-align: center;
+    
+        margin:auto;
+    }
+
+    .board__image {
+        justify-content: center;
+        align-content: center;
+        
+        margin:auto;
+
+        max-width: 320px;
+    }
+
+    .board__image img {
+        max-width: 320px;
+    }
+
+    .board__article {
+        justify-content:center;
+
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 1.7rem;
+    }
+    
+    .board__article__subject {
+        font-size:0.7rem;
+        margin:0 1rem;
+    }
+
+    .board__article__button {
+        font-size:1rem;
+
+        margin:auto;
+        margin-top: 2rem;
+        padding:0.7rem 5rem;
+    }
+
+    .icons {
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 1.5rem;
+    
+        margin:4rem 0;
+    }
+
+
+}
+
+
+
+
+
+
+/** attribution **/
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(300, 69%, 71%);
+}
